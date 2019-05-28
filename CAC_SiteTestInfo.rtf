@@ -1,0 +1,1030 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Light;\f2\fnil\fcharset0 LucidaGrande-Bold;
+\f3\fnil\fcharset0 LucidaGrande;\f4\fswiss\fcharset0 ArialMT;\f5\froman\fcharset0 Times-Roman;
+\f6\fnil\fcharset0 Consolas;\f7\fnil\fcharset0 Menlo-Regular;\f8\fnil\fcharset0 Calibri;
+\f9\fnil\fcharset0 Monaco;\f10\fnil\fcharset0 Consolas-Bold;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red190\green0\blue4;\red0\green0\blue0;
+\red255\green255\blue11;\red0\green0\blue0;\red128\green0\blue128;\red217\green11\blue0;\red255\green0\blue0;
+\red26\green23\blue24;\red253\green134\blue8;\red16\green60\blue192;\red255\green128\blue0;\red254\green112\blue56;
+\red57\green57\blue57;\red0\green0\blue255;\red242\green242\blue242;\red255\green255\blue255;\red27\green29\blue31;
+\red235\green236\blue237;\red49\green49\blue49;\red0\green0\blue233;\red0\green0\blue0;\red255\green255\blue255;
+\red25\green55\blue116;\red244\green244\blue244;\red25\green28\blue31;\red123\green71\blue5;\red193\green71\blue5;
+\red64\green140\blue9;\red13\green0\blue129;\red36\green38\blue41;\red104\green26\blue29;\red43\green39\blue19;
+\red0\green0\blue117;\red234\green234\blue234;\red83\green85\blue2;\red82\green0\blue83;\red115\green0\blue2;
+\red16\green121\blue2;\red11\green84\blue83;\red37\green127\blue159;\red13\green95\blue24;\red47\green51\blue57;
+\red19\green112\blue166;\red83\green83\blue83;\red50\green91\blue142;\red0\green0\blue233;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c80000\c0\c0;\cssrgb\c0\c0\c0;
+\cssrgb\c100000\c100000\c0;\csgenericrgb\c0\c0\c0;\csgenericrgb\c50000\c0\c50000;\csgenericrgb\c85098\c4314\c0;\csgenericrgb\c100000\c0\c0;
+\cssrgb\c13725\c12157\c12549;\cssrgb\c100000\c60000\c0;\cssrgb\c6667\c33333\c80000;\csgenericrgb\c100000\c50000\c0;\csgenericrgb\c99608\c43922\c21961;
+\cssrgb\c29020\c29020\c29020;\csgenericrgb\c0\c0\c100000;\cssrgb\c96078\c96078\c96078;\csgenericrgb\c100000\c100000\c100000;\cssrgb\c14118\c15294\c16078;
+\cssrgb\c93725\c94118\c94510;\cssrgb\c25098\c25098\c25098;\cssrgb\c0\c0\c93333;\csgray\c0;\csgray\c100000;
+\cssrgb\c12549\c29020\c52941;\cssrgb\c96471\c96471\c96471;\cssrgb\c12941\c14510\c16078;\cssrgb\c56078\c34902\c784;\cssrgb\c80784\c36078\c0;
+\cssrgb\c30588\c60392\c2353;\cssrgb\c6275\c6275\c58039;\cssrgb\c18824\c20000\c21176;\cssrgb\c49020\c15294\c15294;\cssrgb\c22353\c20000\c9412;
+\cssrgb\c0\c0\c53333;\cssrgb\c93333\c93333\c93333;\cssrgb\c40000\c40000\c0;\cssrgb\c40000\c0\c40000;\cssrgb\c53333\c0\c0;
+\cssrgb\c0\c53333\c0;\cssrgb\c0\c40000\c40000;\cssrgb\c16863\c56863\c68627;\cssrgb\c0\c43922\c12549;\cssrgb\c24314\c26275\c28627;
+\cssrgb\c5490\c51765\c70980;\cssrgb\c40000\c40000\c40000;\cssrgb\c25098\c43922\c62745;\cssrgb\c0\c0\c93333;}
+\margl1440\margr1440\vieww13820\viewh11560\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 Scenario 8:
+\b0  Purchase a ticket & Make a Donation (Tiffany Treasures Tour)\
+\
+Expected Result: Donation will show up in shopping cart in addition to ticket price\
+\
+Actual Result:  Donation does not show up in shopping cart\
+\
+Steps to Reproduce:\
+1. Select \'91Tours\'94\
+2. Scroll down to Tiffany Treasures\
+3. Select \'91Buy Tickets\'92\
+4. Select a date (March 27)\
+5. Under \'91Are You A Member\'92 click \'91No\'92\
+6.  Click \'91Update\'92 Cart\
+7. Under \'91Would You like to make donate\'92 click on an amount (Clicked $5)\
+     STOP(BUG ISSUE)\
+     Description:  The dollar amount selected ($5) does not display in the cart, nor is it added to the\
+                           Current dollar amount (Tiffany Treasure Tour ($26)\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+
+\b Scenario 9:
+\b0  \
+Buy A Membership Package (Individual)\
+\
+Expected Result: Membership Selection will be added to shopping cart and displayed\
+\
+Actual Result: Membership Selection is not displayed in shopping cart\
+\
+Steps to Reproduce:\
+1. Select Membership in main navigation\
+2. Scroll down and select \'91individual\'92 membership package\
+3. On next screen select \'91become\'92 button (red) under \'91Are you a CAC member\'92\
+4. Select \'91Individual Membership $80\'92 radio button\
+5. Select \'91Next\'92\
+    STOP(BUG ISSUE)\
+    Description:  The membership is not displayed in the cart. Instead \'91There are no items in your cart\'92    \
+    is displayed.\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+
+\b Scenario 10:
+\b0 \
+Buy Membership Package (Any Package EXCEPT \'91Individual\'92 or \'91Dual\'92)\
+\
+Expected Result: The Selected Package will be displayed and added to the cart \
+\
+Actual Result: The Selected Package is not Displayed in the cart\
+\
+Steps to Reproduce\
+1. Select Membership in main navigation\
+2. Scroll down and select a membership package (Sullivan Society)\
+3. On next screen under \'91Are you a CAC member\'92 select \'91Become\'92\
+4. Click \'91View All Membership Options\'92\
+    STOP(BUG ISSUE)\
+    Description: Once you select \'91Become\'92 you expect to see your selected membership package with \
+    Pricing added to the cart.  Instead you only see \'91Individual\'92 and \'91Dual\'92 packages/pricing with the  option to view all packages.  The inclination is to select \'91view all packages\'92 believing that you will see your selected package with its pricing in the shopping cart.  Instead clicking \'91view all packages\'92 takes you back to main membership screen showing all available memberships (the screen where you initially chose your selected package).\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+
+\b Scenario 11:
+\b0 \
+Continue Shopping (add 3 items to shopping cart)\
+\
+Expected Result: \
+\
+Actual Result:\
+\
+Steps to Reproduce:\
+1. Click on \'91Programs & Events\'92 in main navigation\
+2. Click on Pecha Kucha Chicago (March 19)\
+3. Click on \'91Continue Shopping\'92\
+4. Click on \'91Historic Treasures of Chicago\'92s Golden Age (March 14)\'92\
+5. Click on \'91Continue Shopping\'92\
+6 .Click on \'91Programs & Events\'92 in main navigation\
+7. Click on \'91Daytime Talk: The Man in the Glass House (March 27)\'92\
+8. Click on \'91Continue Shopping\'92\
+9. Delete Historic Treasures\
+10. Click on \'91update cart\'92\
+   STOP(BUG ISSUE)\
+   Description:\
+    This message appears:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Sorry, we cannot complete your request because there are not enough tickets available. Please change the number of tickets or check back later.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+The entire cart is emptied and no information is available in the shopping cart.\
+\
+\
+\
+Chosen password: JuniorDev4CAC\
+\
+
+\b Scenario 11:
+\b0 \
+Buy A CAC Exhibit Voucher & add a donation amount\
+\
+Expected Result: Cart will display the donation amount & Voucher amount with total\
+\
+Actual Result:  Cart displays additional amount \
+\
+Steps to Reproduce:\
+1. Go to main navigation tool bar and select Search\
+2. In the Search field type \'91CAC Exhibit Voucher\'92\
+3. Once redirected to page, click on \'91Buy Voucher\'92\
+4. Once on the Cart Page, enter an amount in the input field (initial entry is $60)\
+5. Delete the entry for $60 by clicking the red x next to it.\
+6. Now enter $30 in the input field for donation & click \'91add\'92 button\
+    STOP(BUG ISSUE)\
+    Description: Once the user enters the initial donation of $60 it correctly adds it to the \
+    Total in the cart, but once the user changes his/her mind and deletes it to enter a lower\
+    Amount ($30), the cart adds the $30 in addition to the initial $60 even though the $60 is\
+    Not being displayed.  Basically, a user could enter a donation amount and change their mind to enter a different donation amount, and it will be added on to the original amount that was inputted even though it is not displayed in the cart.  This addition is reflected in the total.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\
+
+\b Scenario 13_A:
+\b0 \
+Purchase A ticket for \'91Modern Chicago\'92\
+Expected Result:  Receive a confirmation page & an email that ticket was successfully purchased\
+\
+Actual Result:\
+Ticket confirmation screen displayed correct info.  An email was sent to set a password for architecture.org\
+\
+1. Go to \'91Tours\'92 in main navigation menu\
+2. Scroll down to \'91Signature Tours\'92 & click on it (left side of screen)\
+3. Click on the \'91Chicago Modern\'92 tour photo to the right side of screen (2nd photo)\
+4. Scroll down to calendar & click on March 29th (Buy Tickets)\
+5.  Once on the Cart screen confirm info (date & Ticket price) and then click \'91NEXT\'92\
+6.  Click \'91CHECK OUT\'92\
+7.  Click \'91Continue As Guest\'92\
+8.  Enter \'91Billing Info\'92 provided and then click \'91Place Order\'92\
+9.  Confirmation Screen should display & email should be sent to set architecture.org   \
+     password.\
+     Test Result: Success\
+\
+
+\b Scenario 13_B.
+\b0 \
+1. Go to Email ({\field{\*\fldinst{HYPERLINK "mailto:jrdeveloper@architecture.org"}}{\fldrslt 
+\f2\b jrdeveloper@architecture.org}}
+\f2\b )\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f3\b0 \cf0 2. Access the email that was sent in Scenario 13_A (account creation w/email) from tickets@architecture.org\
+3. Click \'91SET YOUR PASSWORD\'92\
+4. Click \'91Register Now\'92 (Note that you \'91continued as guess\'92 in step 13_A so you do not have a password or account yet.\
+5. Enter name, email, & phone\
+6. DO NOT SELECT ANY \'91Become A Member\'92 radio buttons\
+7. Click Register \'91button\'92\
+8. You should see confirmation page with your info and a message saying \'93You Should Receive an email shortly with instructions on how to change your password.\'94\
+9. Check email for \'91Set Your Password\'92 Link \
+10. Click the link inside your email
+\f0 \
+11.  A Set Password page pops up\'85.enter new password and confirm your password\
+12. 
+\f3 Click \'91Set Password\'92\
+13. Confirmation @ top of page \'93You have successfully logged in.\'94\
+14. Success\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b \cf0 Scenario 13_C
+\f3\b0 \
+Sign out & Sign In\
+\
+Expected Result: Able to Sign of CAC and Sign back into CAC \
+\
+Actual Result: Was able to sign out of CAC & Sign Back into CAC\
+\
+1. Sign out of CAC account\
+2. Sign in with password created from Scenario 13_B\
+3. Success\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\
+
+\f2\b Scenario 14
+\f3\b0 \
+Buy tickets at Same time as another shopper for same tour\
+Expected Result: Two users are able to buy multiple tickets (if available) for same tour at same time.\
+\
+Actual Result:  Neither user was able to buy any tickets.\
+\
+\'97\'97my note: first tab is logged out\'97\'97second tab is logged into\
+\
+1. Go to Tours (on Browser tab 1 & Browser tab 2)\
+2. Scroll down and select \'91Must See Chicago\'92 for both tabs\
+3. Click \'91Buy Tickets\'92 for both browser tabs\
+4. Select \'91No\'92 for \'93Are You A Member\'92\
+5. In price selection are for number of tickets put 8 (tickets) for tab 1 and 9 (tickets) for tab 2.\
+6. Click \'91Check Out\'92 button in Cart area for both Tab 1 & Tab 2\
+STOP (ERROR)\
+Description: \
+For Browser Tab 1 where user is not logged in (guest) the cart page appears saying \'93There are no items in your cart\'94.  For Browser Tab 2 where user is still signed a cart page is displayed saying \'93Sorry, we cannot complete your request because there are not enough tickets available.  Please change the number of tickets or check back later.\'94\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+
+\f2\b Scenario 15
+\f3\b0 \
+Visitor Sign-up\
+\
+Expected Result: Sign up for CAC e-news \
+\
+Actual Result: Sign up confirmed & email confirmation pending\
+\
+Steps to Reproduce:\
+1. Go to \'91Visit\'92 in main navigation menu\
+2. Scroll down and on right side of screen click \'91Sign Up Now\'92 link\
+3. Enter your info (name, email, postal code, Country)\
+4. On same page click the check box for \'91Kids, Teens, and families\'92\
+5. Click \'91Submit\'92 button\
+6. Confirmation Page Displays \'93Thanks for Signing up!\'92 3:12pm\
+7. Check your email for confirmation 3:22pm\
+8. Will Check email in 10\
+EOD: As of 4:53pm there is still no email confirmation\
+Day 2 10:38am no email confirmation yet \
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+
+\f2\b Scenario 16
+\f3\b0 \
+LEARN - Sign up for alerts\
+\
+Expected Result: Sign up for info \
+\
+Actual Result:  Sign up successful according to \'91Thank You\'92 page\
+\
+Steps to Reproduce:\
+1. Click on \'91Learn\'92 in the main navigation menu\
+2. Scroll down mid-section & click on \'91Sign Up\'92 under \'92Training Section\'92\
+3. Enter requested info (name, email, school/organization, & any red-star areas)\
+4. Click \'91Submit\'92 Button under Confirm Request\
+5. Confirmation page displayed stating the \'93Your information has been received.\'94\
+\
+* Note that no email sent to confirm that any info will reach email address that was entered (not sure if this is designed this way or not)\
+\
+\
+
+\f2\b Scenario 17.
+\f3\b0  \'974:30pm (3/19/19) New Issue \
+Clear Cart - Delete all items from cart & close out browser so that\
+When it is time to make a new purchase the cart is clear of old data.\
+\
+Expected Result: The Cart is Clear of old data after deleting it\
+\
+Actual Result: The Cart still displays the old data even after deleting it\
+\
+Steps to Reproduce:\
+1. In main navigation bar, click on \'91TICKETS\'92\
+2. In drop-down menu under \'91TICKETS\'92 click \'91CART\'92\
+3**Note that prior intended purchases are still displayed in CART\
+(Tiffany Treasures, BTS: Farm on Ogden, Donation ($5), Membership (Friends & Family))\
+4. Clear the cart by deleting all items (click on red x)\
+5. **Note that no items are showing in CART\
+6. Refresh the Browser (Note that all items that were previously deleted are now showing up in CART again)\
+7. Delete all items again by clicking on the red x\
+8. CLOSE OUT THE BROWSER now and open up a new window\
+9. Check Cart again by following steps 1 & 2 above\
+STOP (BUG ISSUE)\
+Description: After deleting all items in the cart and either refreshing the page or closing out the browser completely and opening the site up in a different window the items still show up in the CART (even after deletion in a prior session) upon returning to it.  \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+note to self: start with re-testing scenario 11 after lunch\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\b\fs29\fsmilli14667 \cf4 \cb5 \expnd0\expndtw0\kerning0
+Retest for Scenario 12:
+\f5\b0\fs24 \cb1 \
+
+\f4\b\fs29\fsmilli14667 \cb5 Buy A CAC Exhibit Voucher & add a donation amount
+\f5\b0\fs24 \cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\b\fs29\fsmilli14667 \cf4 Expected Result: 
+\b0 Cart will display the donation amount, Processing Fee & Voucher amount with calculated total
+\f5\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\b\fs29\fsmilli14667 \cf4 Actual Result: \'a0
+\b0 Cart displays additional amount 
+\f5\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\b\fs29\fsmilli14667 \cf4 Steps to Reproduce:
+\f5\b0\fs24 \
+
+\f4\b\fs29\fsmilli14667 1. 
+\b0 Go to main navigation toolbar and select \'91Search\'92
+\f5\fs24 \
+
+\f4\b\fs29\fsmilli14667 2. 
+\b0 In the Search field type \'91CAC Exhibit Voucher\'92
+\f5\fs24 \
+
+\f4\b\fs29\fsmilli14667 3. Click on \'91CAC Exhibit Voucher\'92 Link\
+4. 
+\b0 Once redirected to page, click on \'91Buy Voucher\'92
+\f5\fs24 \
+
+\f4\b\fs29\fsmilli14667 5. 
+\b0 Once on the Cart Page, Click \'91NEXT\'92 button\
+6. Next Page will show Donation field.  Enter 60 in the input field then \
+    Click \'91ADD\'92.\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f5\b\fs28 \cf4 7
+\b0\fs24 .
+\f4\b\fs29\fsmilli14667 . 
+\b0 Delete the entry for $60 by clicking the red x next to it.
+\f5\fs24 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\b\fs29\fsmilli14667 \cf4 8. 
+\b0 Now enter $30 in the input field for donation & click \'91ADD\'92 button\
+STOP (BUG ISSUE)\
+Description: \
+    Upon deleting the initial amount of $60 and changing the entry to $30 \
+    instead, the calculation still reflected that $60 was included in the final price \
+    even though the entry was deleted and replaced with an entry for only $30.  \
+\
+    Result = Ticket Price (12) + Deleted Donation (60) + New Donation (30) +   \
+    Processing Fee (3) for a total of $105.\
+\
+\pard\pardeftab720\sl260\partightenfactor0
+
+\f0\b\fs21 \cf3 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+\
+\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\fs29\fsmilli14667 \cf4 \cb5 Retest for Scenario 11:
+\f5\b0\fs24 \cb1 \
+
+\f4\b\fs29\fsmilli14667 \cb5 Continue Shopping & delete an item from cart & update cart
+\f5\b0\fs24 \cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\b\fs29\fsmilli14667 \cf4 Expected Result: 
+\b0 Able to add multiple items to cart and delete an item and see updated cart information (i.e.: adjusted price for deleted item.)
+\f5\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\b\fs29\fsmilli14667 \cf4 Actual Result:  
+\b0 Item was deleted from cart and price adjustment was\
+Computed correctly.\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f5\fs24 \cf4 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\b\fs29\fsmilli14667 \cf4 Steps to Reproduce:
+\f5\b0\fs24 \
+
+\f4\b\fs29\fsmilli14667 1. 
+\b0 Click on \'91Programs & Events\'92 in main navigation
+\f5\fs24 \
+
+\f4\b\fs29\fsmilli14667 2. Scroll down & 
+\b0 Click \'91Register\'92 on \ul Pecha Kucha Chicago \ulnone \
+    (The date will show March 19 only)\
+3. For \'91QTY\'92 select 1 in drop-down menu for only one ticket ($15)
+\f5\fs24 \
+
+\f4\b\fs29\fsmilli14667 3. 
+\b0 Click on \'91Continue Shopping\'92
+\f5\fs24 \
+
+\f4\b\fs29\fsmilli14667 4. Scroll down & 
+\b0 Click on \'91Historic Treasures of Chicago\'92s Golden Age 3:00pm Tour & then select March 30, 2019 on calendar page.\
+      \'97Note this was initially \'91Historic Treasures of Chicago\'92s Golden Age   \
+      (March 14) in first test but date has past so must choose different tour\'97
+\f5\fs24 \
+
+\f4\b\fs29\fsmilli14667 5. 
+\b0 Click on \'91Continue Shopping\'92
+\f5\fs24 \
+
+\f4\b\fs29\fsmilli14667 6. 
+\b0 Click on \'91Programs & Events\'92 in main navigation
+\f5\fs24 \
+
+\f4\b\fs29\fsmilli14667 7. Scroll down & 
+\b0 Click on \'91Daytime Talk: The Man in the Glass House (March 27)\'92 & Click \'91Register\'92
+\f5\fs24 \
+
+\f4\b\fs29\fsmilli14667 9. On Shopping Cart Page, 
+\b0 Delete Historic Treasures
+\f5\fs24 \
+
+\f4\b\fs29\fsmilli14667 10. 
+\b0 Click on \'91update cart\'92\
+Success \'97Also note that the \'91My Cart\'92 link on the right side of the page now \
+Reflects the correct number of items in the cart.
+\f5\fs24 \
+\pard\pardeftab720\sl260\partightenfactor0
+
+\f0\b\fs21 \cf3 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+To Do\'92s for tomorrow 3/20/2019\
+\
+Note: \cf6 Visit Membership issue regarding if there is supposed to be a processing fee ($3)\'85.this fee seems to be omitted at time only when a membership is included\'85.need to know if membership excludes the processing fee\
+\
+\cf3 How to test for session timeout:  \cf6 Create Browser Session Time-out Script & set it for 12 minutes\cf3 \
+https://blog.codinghorror.com/your-session-has-timed-out/\
+\
+\pard\pardeftab720\sl260\partightenfactor0
+\cf6 Also check on Open House Donation submission: received a \'91Transaction Has Been Declined\'94 error\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+On the \'91A School Is Not A Building Page, there is a typo on the first line: \'93Apart from the image below which I \cf7 \ul \ulc7 though. \'97\cf6 \ulc6 should be thought\ulnone \
+\
+Steps To Reproduce:\
+1. Go to Exhibits (Main Navigation Menu)\
+2. In submenu on Main Navigation, Click on \'91Online Exhibits\'92\
+3. Scroll down to \'91CHIDEISGN: DESIGNING A CENTER FOR ARCHITECTURE, DESIGN AND EDUCATION\'92 & click \
+    \'91Explore The Online Exhibition\'92 link\
+4. On CHIDESIGN page, scroll down to \'91Winners\'92 & click \'91A School Is Not A Building\'92\
+5.  On the \'91A School Is Not A Building\'92 page, there is a spelling error in the first line of the paragraph:\
+     \'93Apart from the image below which I \cf8 \'93\ul \ulc7 t\ulnone hough\'94\cf6  \'97\'97This word should be \cf9 thought\
+\pard\pardeftab720\sl260\partightenfactor0
+\cf6 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+Uncertain if the grammar here is purposely written this way:\
+See Link:  http://s3.amazonaws.com/architecture-org/files/objects/pdf/paul-preissner-architects-08.pdf\
+Pyramid of Burnside Paragraph 3:  \'93
+\f5\b0\fs24 \cf4 And not only 
+\b \cf9 would 
+\b0 the city 
+\b would
+\b0  finally\cf4  see Burnside\'94, the citizens of the Triangle, 200 feet higher in the sky, could finally look back.  \'97My note: seems it should be \'93And not only would the city finally see Burnsisde, \
+\
+
+\f0\b\fs21 \cf6 \
+\pard\pardeftab720\sl900\sa60\partightenfactor0
+
+\b0\fs72 \cf10 \cb2 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f4\fs24 \cf4 \cb11 It may be possible to simulate multiple shoppers with separate browsers, e.g. Chrome and Safari. To be tested.
+\f5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs21 \cf6 \
+\pard\pardeftab720\sl480\slmult1\partightenfactor0
+\cf6 Scenario 18: Buy a Membership in addition to 2 tickets\
+\pard\pardeftab720\partightenfactor0
+\cf6 \
+Expected Result: Membership & Two tickets for \'91Chicago Architecture: A Walk through Time\'92 can be purchased with\
+                               The applied membership discount\
+\
+Actual Result:\
+\
+Steps to Reproduce\
+1. Navigate to Membership (Main Menu)\
+2. Scroll down the page to \'91Friends & Family $180\'94 and click \'91Buy A Membership\'92\
+3. Ensure that \'91Friends & Family $180\'92 Membership is in your CART \
+4. Click Continue Shopping\
+5. Navigate to \'91Tours\'92 & Select \'91Walking, Bus, & Bike\'92 tours\
+6. Scroll to \'91Chicago Architecture: A Walk Through Time\'92 & click \'91Buy Tickets\'92\
+7. Select a date (Monday, APR 1) & click \'91Buy Tickets\'92\
+8. Ensure the tour was added to your cart and for \'91QTY\'92 select 2\
+9. Click \'91Check Out\'92\
+10. On next page, scroll down to \'91Continue To Checkout\'92\
+11. Enter required info (Name, Phone, Email) **for email put {\field{\*\fldinst{HYPERLINK "mailto:cacpwtest@gmail.com"}}{\fldrslt 
+\f4\b0\fs24 \cf12 \ul \ulc12 cacpwtest@gmail.com}}
+\f4\fs24 \cf4 \uc0\u8232 
+\fs20 12. \cf6 \kerning1\expnd0\expndtw0 Enter credit card info\
+13. Click place order\
+14. Summary Page displays showing your order (Note that the price for \'91Chicago Arch Walk Through Time\'92 \
+      Displays a price of $0.  \'97\'97  It is assumed that the membership discount was applied here\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97Rest Link: http://rest.caftest.org/tours\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs22 \cf4 \cb5 \expnd0\expndtw0\kerning0
+Re-test for Scenario 14 Using Chrome Browser & Safari Browser
+\f5\b0 \cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4 \cf4 \cb5 Buy tickets at Same time as another shopper for same tour
+\f5 \cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\b \cf4 Expected Result: 
+\b0 Two users are able to buy multiple tickets (if available) for same tour at same time.
+\f5 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\b \cf4 Actual Result: \'a0
+\b0 Neither user was able to buy any tickets.
+\f5 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b\fs24 \cf4 \uc0\u8232 
+\fs22 Steps to Reproduce:\
+1. 
+\b0 Open up CAC website in both Safari Browser & Chrome Browser\
+2. In chrome browser go to tours, and then in Safari Browser go to tours\
+3. In Safari, scroll down to \'91Signature Tours\'92 & Click on \'91Chicago Modern\'92\
+4. In Chrome, scroll down to \'91Signature Tours\'92 & Click on \'91Chicago Modern\'92\
+\pard\pardeftab720\partightenfactor0
+
+\b \cf4 5. In Safari, scroll down to \'91APR 2\'92 & click \'91Buy Tickets\'92\
+6. In Chrome, scroll down to \'91APR 2\'92 & Click \'91Buy Tickets\'92\
+7. In Safari (CART page), for \'91QTY\'92 select 7\
+8. In Chrome (CART page), for \'91QTY\'92 select 5\
+9. In Safari, click \'91Check out\'92 \
+10. In Chrome click \'91Update Cart\'92 & then click \'91Place Order\'92 (enter required info\'97\'97use cacpwtest@gmail.com)\
+11. Note that the price ($29) reflects the discount for this user who previously purchased membership ($26 for 5 tickets + $3 processing fee)\
+11. In Safari click \'91Continue as Guest\'92 & fill in required info (use tesspwtest@gmail.com)\
+12. In Safari click \'91Place Order\'92 (note price is $185 \'97 7tickets @ 26 plus $3 processing fee)\
+Safari Order # 1103004\
+Chrome Order #: 1103005\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+*****How do you know what your member id is?  Is it emailed to you or do you have to wait on the physical cards to be mailed to you?\
+       This is needed for the discount when you shop in CAC online store.\
+\
+\'97\'97\'97tried using this email in case info is mailed\'97\'97\'97\
+Note: use {\field{\*\fldinst{HYPERLINK "mailto:jrdeveloper@architecture.org"}}{\fldrslt jrdeveloper@architecture.org}}\
+Pw is same as one used to logon to the computer ** \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+Scenario 19 Test Membership Discount: Receive 10% off purchase in CAC store as a member\
+\
+Expected Result:  Receive 10% off merchandise in CAC store: \
+\
+Actual Result:\
+\
+Steps to Reproduce: \
+1. Click Membership in Main Navigation menu\
+2. Scroll down to \'91Individual\'92 Membership\
+3. Click on \'91Buy A Membership\'92\
+4. Click on \'91Continue Shopping\'92\
+5. Click on \'91Visit\'92 in main navigation menu\
+6. Click on \'91Shop\'92\
+7. Scroll down and click on \'91Iconic Chicago\'92 keychain photo\
+8. Click on \'91Add to Cart\'92 under the keychain\
+9. Click on \'91Proceed to Checkout\'92\
+10. \cf8 Need Membership ID # for discount????\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 Side Note: 
+\b0 When membership is purchased and a person wanted to shop online in the CAC store immediately the Membership ID# is needed\
+in order to receive the 10% membership discount.  This number is not immediately known and the person may not be aware of how to get it aside from the membership card that takes time to be mailed out.  I myself thought that the discount would be automatically applied until I realized I was outside of the CAC site (i.e.: https://shop.architecture.org/).
+\b \cf4 \
+\
+\
+FYI: 
+\b0 The second & third slides on the main page of the 
+\i Rest
+\i0  site are completely different from the slides on the 
+\i Current
+\i0  site: The main page slides are the same but when you scroll to the next 2 they are different.  For example, the second slide in Rest site is \'93Stay Warm At The CAC\'94, and the second slide in the current site is \'91Become A Member & Save\'92 \'97 \
+\
+
+\b \cf13 Note:
+\b0 \cf4  Tour \'91Daytime Talk: The Man In The Glass House shows sold out on current site but can still be registered for on rest site
+\b \
+\
+\
+\cf14 Note:\cf4  see: http://small-change.caftest.org/programs-events/#programs & http://rest.caftest.org/programs-events\
+\pard\pardeftab720\partightenfactor0
+
+\b0 \cf4 The current site displays \'91
+\b Mobile Architecture Lab\'92
+\b0  just after the \'91Chicago Architecture Center Designing Futures Gala\'92 whereas\
+The new (rest) site displays the \'91
+\b One-Day Camp: Lego Architecture Camp\'92
+\b0  just after \'91Chicago Architecture Center Designing Futures Gala\'92   \'97-The \'91Mobile Architecture Lab\'92 is not on the new site at all.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\b \cf13 Note:\cf4  Also, \'91Invite Only: What\'92s Next? Designing The City of The Future\'92 is also a missing tour on the new site as well (should be right after \'91Open House Chicago\'92)\uc0\u8232 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf9 \'97MARCH 27\'97\cf6 \
+\
+Note: Check if bike tour \'93Bike Humbolt, the 606 and Palmer Square\'94 dates is correct for buy tickets\'97cart page shows no tickets are\
+Available for every date selected.\
+\
+Ask about alerts if someone buys two tour tickets that may conflict with one another (i.e. - buying tickets for two different tours on same day where times overlap with one another)\
+\
+Note to self\'97for scenarios start at 105\
+\
+\'97\'97finish scenario 108 (left off here)\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+April 2 Notes\
+\
+Add Donation to Cart\
+Selected Chinatown tour to get to cart to add donation and this error happened:\
+\pard\pardeftab720\sl460\partightenfactor0
+
+\fs24 \cf15 \cb2 Warning
+\f1\b0 : Illegal string offset 'Description' in\'a0
+\f0\b /var/www/vhosts/architecture.org/dev/custom/inc/lib/tessclient.php
+\f1\b0 \'a0on line\'a0
+\f0\b 18
+\b0\fs26 \cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\
+https://dev.architecture.org/account/set-password?l=jrdeveloper%40architecture.org&t=711F20EA-CD54-439F-B5EC-ABE7EC2C29D5
+\b\fs22 \cf6 \cb1 \
+\pard\pardeftab720\sl260\partightenfactor0
+\cf6 \
+Sport123 is jrdeveloper@architecture.org password on CAC site for account login\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+APRIL 2\
+\
+SPREADSHEET\
+\pard\pardeftab720\partightenfactor0
+\cf6 Line 10 unit test 
+\b0\fs26 \cf4 \cb2 Diverge from purchase path, log in, come back to purchase path\
+Signed out, navigated to Learn menu item, then to Building of Chicago, then accessed Cart menu\
+Item to log back in \'97\'97 JUST MAKE SURE TEST MET CRITERIA\
+\
+Line 13 unit test \'97 Believe this is a \'93pass\'94 because there are two different user sessions that could show\
+Different things for that reason\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Gmail:\
+\
+https://dev.architecture.org/account/set-password?l=tesspwtest%40gmail.com&t=897D1C66-59DE-4155-B1F5-BF84323F7113\
+\
+\
+Password for tesspwtest@gmail.com is sport123\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+https://dev.architecture.org/account/set-password?l=jrdeveloper%40architecture.org&t=3B559BB4-65DB-4286-9E0C-6521641DFC03\
+\
+\pard\pardeftab720\partightenfactor0
+
+\b \cf16 April 2 @ 5:06pm\
+Did Line 15 again using tesspwtest@gmail.com\
+\pard\pardeftab720\sl460\partightenfactor0
+
+\fs24 \cf16 \cb17 Order Number: 1136456. For Walk Pilsen tour\
+No confirmation email & no tickets attached\'85\cf15 \
+\pard\pardeftab720\sl460\partightenfactor0
+
+\b0\fs26 \cf4 \cb2 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+APRIL 3 @11:54am\
+\
+Buy a Ticket:  via {\field{\*\fldinst{HYPERLINK "mailto:jrdeveloper@architecture.org"}}{\fldrslt 
+\f2\b\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 jrdeveloper@architecture.org}}
+\f2\b\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0  
+\f0\b0\fs26 \cf4 \cb2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl460\partightenfactor0
+
+\b\fs24 \cf15 \cb17 Order Number: 1136541 (HISTORIC SKYSCRAPERS \'97 4/29/2019) & $5 DONATION\
+Testing to see if ticket confirmation email was sent with PDF tickets attached\
+Results: No pdf tickets or email confirmation!\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\b0\fs26 \cf4 \cb2 \
+\pard\pardeftab720\partightenfactor0
+\cf4 Note that these links have 404 Errors for sign-ups:\
+\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f4 \cf12 \cb11 \ul \ulc12 http://dev.architecture.org/join-give/give/donations/building-communities-challenge\
+\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f0 \cf4 \cb2 \ulnone http://dev.architecture.org/experience-caf/programs-events/biennial/request-information-for-cafs-biennial-education-opportunities\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\cf16 4/3/2019\cf4 \
+
+\b \cf9 NOTE: ALWAYS REPLACE THE WORD
+\b0 \cf4  \'91architecture\'92 with \'91dev\'92 in urls where you\'92re resetting passwords via the link\
+Sent to your email because you need to be on the dev server:\
+\
+https://dev.architecture.org/account/set-password?l=jrdeveloper%40architecture.org&t=A4088C7B-AF82-4CB1-9779-BECC71348AF7\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\pard\pardeftab720\partightenfactor0
+
+\b\fs22 \cf6 \cb1 Order confirmation tests \'97 April 9, 2019\
+\
+Chicago Athletic Foundation June 12\
+\
+\pard\pardeftab720\sl460\partightenfactor0
+
+\fs40 \cf15 \cb17 Order Number: 1137288. \
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\cf13 Splash notes (4/9/2019)\cf15 ;\
+\
+
+\fs36 To find out what docker container is in use do this command:
+\fs40 \
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f6\b0\fs26 \cf9 \cb18 $ docker container ls\cf19 \cb20 \
+\pard\pardeftab720\sl460\partightenfactor0
+
+\f0\b\fs36 \cf15 \cb17 You will get the container ID (i.e.:
+\fs40  
+\f6\b0\fs26 \cf19 \cb20 12a32e8928ef)
+\f0\b\fs40 \cf15 \cb17 \
+\pard\pardeftab720\sl460\partightenfactor0
+
+\fs22 \cf6 \cb1 USE BELOW COMMAND TO STOP A DOCKER CONTAINER WHEN YOU WANT TO START A NEW PROJECT (USING THE ID RELEVANT TO YOUR CONTAINER (as shown in command above)\
+\pard\pardeftab720\sl144\slmult1\partightenfactor0
+
+\fs40 \cf15 \cb17 \
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f6\b0\fs26 \cf9 \cb20 $ docker stop 12a32e8928ef\cf19 \
+\pard\pardeftab720\sl192\slmult1\partightenfactor0
+
+\f0\b\fs22 \cf6 \cb1 \
+\pard\pardeftab720\sl460\partightenfactor0
+\cf6 THEN START A NEW ONE WITH THIS COMMAND:\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f7\b0\fs24 \cf9 $ docker run -it -p 8050:8050 scrapinghub/splash\cf21 \
+\
+Then go to the port 8050 in address bar (browser window) using below address:\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://0.0.0.0:8050/"}}{\fldrslt 
+\f5 \cf22 \ul \ulc22 http://0.0.0.0:8050/}}
+\f5 \cf22 \ul \ulc22 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f7 \cf21 \ulnone \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\pardeftab720\sl460\partightenfactor0
+
+\f0\b\fs22 \cf6 \
+\pard\pardeftab720\sl260\partightenfactor0
+\cf6 SAMPLE SPLASH SCRIPTS (REMEMBER, THINK FROM A PROGRAMMING PERSPECTIVE & NOT VISUALLY)\
+\
+Start with the form scripts, easier to figure out\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf6 \
+\pard\pardeftab720\sl260\partightenfactor0
+\cf6 To include driver in your path do this at the terminal window:\
+\
+PATH=
+\f7\b0 \cf23 \cb24 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/chromedriver\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf23 \
+echo $PATH\
+The echo command will show you the new driver has been added to end of line\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b \cf6 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\pardeftab720\sl260\partightenfactor0
+\cf6 \
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f8\b0 \cf0 \kerning1\expnd0\expndtw0 from selenium.webdriver import Chrome\
+browser=webdriver.Chrome();\
+browser.get('https://www.foodnetwork.com/');\
+\pard\pardeftab720\sl260\partightenfactor0
+
+\f0\b \cf6 \expnd0\expndtw0\kerning0
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\pard\pardeftab720\sl432\partightenfactor0
+
+\f7\b0\fs28\fsmilli14400 \cf25 \cb26 from\cf27  \cf4 selenium.webdriver\cf27  \cf25 import\cf27  \cf4 Firefox\cf27 \
+\cf28 >>> \cf25 from\cf27  \cf4 selenium.webdriver.firefox.options\cf27  \cf25 import\cf27  \cf4 Options\cf27 \
+\cf28 >>> \cf4 opts\cf27  \cf29 =\cf27  \cf4 Options()\cf27 \
+\cf28 >>> \cf4 opts\cf29 .\cf4 set_headless()\cf27 \
+\cf28 >>> \cf25 assert\cf27  \cf4 opts\cf29 .\cf4 headless\cf27   \cf28 # Operating in headless mode\cf27 \
+\cf28 >>> \cf4 browser\cf27  \cf29 =\cf27  \cf4 Firefox(options\cf29 =\cf4 opts)\cf27 \
+\cf28 >>> \cf4 browser\cf29 .\cf4 get(\cf30 'https://duckduckgo.com'\cf4 )\cf27 \
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f6\fs26 \cf19 \cb20 #!/usr/bin/python
+\f4 \cb2 /\'a0\
+\
+#!
+\f7\fs22 \cf23 \cb24 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Library/Frameworks/Python.framework/Versions/3.7/bin\
+
+\f0\b \cf6 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 From selenium.webdriver import Chrome\
+\pard\pardeftab720\sl260\partightenfactor0
+\cf6   browser.get(\'91https://duckduckgo.com\'92)\
+\
+\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f6\b0\fs26 \cf31 \cb20 import\cf32  os\
+\
+\cf31  def\cf32  cls():\
+ os.system(\cf33 "clear"\cf32 )\
+\
+cls()\cf34 \
+\pard\pardeftab720\sl260\partightenfactor0
+
+\f0\b\fs22 \cf6 \cb1 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Import os\
+\
+  Def cls():\
+  os.system(\'93clear\'94)\
+  cls()\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f9\b0\fs24 \cf35 \cb36 import\cf4  time\cb1 \
+\cf35 \cb36 from\cf4  selenium \cf35 import\cf4  webdriver\cb1 \
+\
+\cb36 driver \cf37 =\cf4  webdriver\cf37 .\cf38 Chrome\cf37 (\'93webdriver.chrome.driver\'94);\cf4  \'a0\cf39 # Optional argument, if not specified will search path.\cf4 \cb1 \
+\cb36 driver\cf37 .\cf35 get\cf37 (\cf40 'http://www.google.com/xhtml'\cf37 );\cf4 \cb1 \
+\cb36 time\cf37 .\cf4 sleep\cf37 (\cf41 5\cf37 )\cf4  \cf39 # Let the user actually see something!\cf4 \cb1 \
+\cb36 search_box \cf37 =\cf4  driver\cf37 .\cf4 find_element_by_name\cf37 (\cf40 'q'\cf37 )\cf4 \cb1 \
+\cb36 search_box\cf37 .\cf4 send_keys\cf37 (\cf40 'ChromeDriver'\cf37 )\cf4 \cb1 \
+\cb36 search_box\cf37 .\cf4 submit\cf37 ()\cf4 \cb1 \
+\cb36 time\cf37 .\cf4 sleep\cf37 (\cf41 5\cf37 )\cf4  \cf39 # Let the user actually see something!\cf4 \cb1 \
+\cb36 driver\cf37 .\cf4 quit\cf37 ()\cf4 \
+\pard\pardeftab720\sl260\partightenfactor0
+
+\f0\b\fs22 \cf6 \cb1 \
+
+\b0 /Users/jr.developer/Downloads/chromedriver
+\b \
+\
+PATH=
+\f7\b0 \cf23 \cb24 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:
+\f0 \cf6 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 /Users/jr.developer/Downloads/chromedriver
+\f7 \cf23 \cb24 \kerning1\expnd0\expndtw0 \CocoaLigature0 :/usr/local/bin:/usr/local/bin/chromedriver\
+\
+
+\f0\b \cf6 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f7\b0 \cf23 \cb24 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/
+\f0\b \cf6 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl260\partightenfactor0
+\cf6 \
+\
+\pard\pardeftab720\sl260\partightenfactor0
+\cf9 THIS LINK WILL BE HELPFUL (4/16/2019 \'97 5PM)\cf6 \
+{\field{\*\fldinst{HYPERLINK "https://www.kenst.com/2015/03/including-the-chromedriver-location-in-macos-system-path/"}}{\fldrslt 
+\f5\b0\fs24 \cf22 \ul \ulc22 https://www.kenst.com/2015/03/including-the-chromedriver-location-in-macos-system-path/}}\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f6\b0\fs26 \cf31 \cb20 from\cf32  selenium.common.exceptions \cf31 import\cf32  \cf42 WebDriverException\cf32 \
+\
+\cf31 try\cf32 :\
+    WebDriver.title\
+    \cf31 print\cf32 (\cf31 True\cf32 )\
+\cf31 except\cf32  \cf42 WebDriverException\cf32 :\
+    \cf31 print\cf32 (\cf31 False\cf32 )\cf34 \
+\
+\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b\fs21\fsmilli10800 \cf43 \cb36 from
+\f6\b0 \cf44  
+\f10\b \cf45 selenium
+\f6\b0 \cf44  
+\f10\b \cf43 import
+\f6\b0 \cf44  webdriver\
+
+\f10\b \cf43 from
+\f6\b0 \cf44  
+\f10\b \cf45 selenium.webdriver.common.keys
+\f6\b0 \cf44  
+\f10\b \cf43 import
+\f6\b0 \cf44  Keys\
+\
+driver \cf46 =\cf44  webdriver\cf46 .\cf44 Chrome()\
+driver\cf46 .\cf44 get(\cf47 "http://www.python.org"\cf44 )\
+
+\f10\b \cf43 assert
+\f6\b0 \cf44  \cf47 "Python"\cf44  
+\f10\b \cf43 in
+\f6\b0 \cf44  driver\cf46 .\cf44 title\
+elem \cf46 =\cf44  driver\cf46 .\cf44 find_element_by_name(\cf47 "q"\cf44 )\
+elem\cf46 .\cf44 clear()\
+elem\cf46 .\cf44 send_keys(\cf47 "pycon"\cf44 )\
+elem\cf46 .\cf44 send_keys(Keys\cf46 .\cf44 RETURN)\
+
+\f10\b \cf43 assert
+\f6\b0 \cf44  \cf47 "No results found."\cf44  
+\f10\b \cf43 not
+\f6\b0 \cf44  
+\f10\b \cf43 in
+\f6\b0 \cf44  driver\cf46 .\cf44 page_source\
+driver\cf46 .\cf44 close()\
+\
+\
+\
+TO PREVENT ERRORS THE CHROME DRIVER PATH SHOULD BE SPECIFIED OR BE IN THE CURRENT WORKING DIRECTORY:\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\fs26 \cf31 \cb20 from\cf32  selenium \cf31 import\cf32  webdriver\
+driver = webdriver.\cf42 Chrome\cf32 (executable_path= r\cf33 'C:\\\\Utility\\\\BrowserDrivers\\\\chromedriver.exe'\cf32 )\cf34 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\fs21\fsmilli10800 \cf44 \cb36 \
+\
+\
+\
+\
+\
+\
+/user/local/bin\
+\
+\
+RETEST \
+\
+\
+
+\f5\fs24 \cf48 \cb1 \ul \ulc48 \outl0\strokewidth0 \strokec48 http://rest.caftest.org
+\f6\fs21\fsmilli10800 \cf44 \cb36 \ulnone \outl0\strokewidth0 /account/set-password?l=jrdeveloper%40architecture.org&t=C7E8A4A3-6AF9-4390-9139-D7AEF4D5B20C}
